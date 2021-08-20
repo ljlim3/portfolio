@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-        <title>Lydia's Portfolio</title>
-    </head>
-    <body>
-        <div class="wrapper">
-            <section id="card">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lydia's Portfolio</title>
+    <link rel="stylesheet" href="./static/style.css">
+    <script src="https://kit.fontawesome.com/2924cb6d78.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
                 <div class="card-container">
                     <div id="card" class="card">
                         <div class="card-front">
                             <div class="left">
-                                <img src="./static/my-logo-2.png" alt="my logo" />
-                                <h2><span class="name">Lydia Lim</span></h2>
-                                <h4>Designer | Developer</h4>
+                                <!-- <img src="./static/my-logo-2.png" alt="my logo" /> -->
+                                <h2><span class="name typing"></span></h2>
+                                <h4><span class="typing-2"></span></h4>
                             </div>
                             <div class="right">
                                 <div class="btn btn-proj">
-                                    <input type="checkbox" onclick="location.href='projects.html'"></input>
+                                    <input type="checkbox" onclick="location.href='project.html'"></input>
                                 </div>
                                 <div class="btn btn-res">
                                     <input type="checkbox" onclick="location.href='pdf/Resume.pdf'"></input>
@@ -29,13 +42,14 @@
                             </div>
                         </div>
                         <div class="card-back">
-                            <h1>My goal as a UX engineer is to deliver an intuitive and user-friendly experience
+                            <h1>My goal as a UX engineer is to deliver an intuitive and pleasant experience
                                 for users such that their time, emotions, and efforts are not wasted but supported.</h1>
                         </div>
                     </div>
-                </div>
-            </section>
+            </div>
         </div>
-        <script src="main.js"></script>
-    </body>
+    </section>
+
+    <script src="main.js"></script>
+</body>
 </html>
