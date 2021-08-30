@@ -77,9 +77,9 @@ img {
     cursor: pointer;
 }
 
-/* .section-container {
-    padding: 2rem;
-} */
+.section-container{
+    padding: 1.5rem;
+}
 .section-container:nth-child(even){
     background: #c3dce4;
 }
@@ -141,7 +141,7 @@ img {
 
 /* second section */
 .second-data, .role-data {
-    text-align: center;
+    /* text-align: center; */
 }
 .second-description, .about-description {
     margin-bottom: var(--mb-3);
@@ -151,6 +151,10 @@ img {
     width: 280px;
     border-radius: .5rem;
     justify-self: center;
+}
+.second-data ul {
+    list-style-type: disc;
+    font-size: 1.1rem;
 }
 
 /* description slider */
@@ -230,7 +234,7 @@ img {
 
 /* about section */
 .about-data {
-    text-align: center;
+    /* text-align: center; */
 }
 .initial .about-data .content-1 p {
     font-size: var(--normal-font-size);
@@ -240,6 +244,7 @@ img {
     color: var(--text-color);
 }
 .about-container, .problem-container {
+    padding: 1rem;
     row-gap: 2.5rem;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
@@ -252,7 +257,7 @@ img {
 
 /* problem section */
 .problem-container .right {
-    margin: 2em;
+    /* margin: 2em; */
 }
 .problem-container .right li {
     list-style-type: disc;
@@ -282,7 +287,7 @@ img {
     border: solid 4px rgb(201, 201, 201);
 }
 .final span {
-    padding: 4em;
+    /* padding: 4em; */
     text-align: center;
     font-size: 2rem;
 }
@@ -315,7 +320,9 @@ img {
         width: 380px;
         order: -1;
     }
-
+    .problem-container .right {
+        margin: 2em;
+    }
 }
 
 @media screen and (min-width: 768px) {

@@ -42,7 +42,7 @@ html {
 }
 
 body {
-    margin: var(--header-height) 0 0 0;
+    /* margin: var(--header-height) 0 0 0; */
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
@@ -61,6 +61,16 @@ a {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.nav-header {
+    /* width: 100%; */
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: inherit;/*#FBFEFD;*/
 }
 
 /* button */
@@ -105,10 +115,12 @@ img {
 
 /* Layout */
 .bd-container {
-    max-width: 960px;
+    /* max-width: 960px; */
+    max-width: 1200px;
     width: calc(100% - 2rem);
     margin-left: var(--mb-2);
     margin-right: var(--mb-2);
+    padding: 1.5rem 0;
     /* margin-bottom: var(--mb-5); */
 }
 .bd-grid {
@@ -259,7 +271,7 @@ img {
 
 /* problem section */
 .problem-container .right {
-    margin: 2em;
+    margin-left: 1em;
 }
 .problem-container .right li {
     list-style-type: decimal;
@@ -289,7 +301,7 @@ img {
     border: solid 4px rgb(201, 201, 201);
 }
 .final span {
-    padding: 4em;
+    /* padding: 4em; */
     text-align: center;
     font-size: 2rem;
 }
@@ -298,6 +310,21 @@ img {
     width: 340px;
 }
 
+
+@media screen and (min-width: 380px) {
+    :root {
+        --biggest-font-size: 2.25rem;
+        --h1-font-size: 1.5rem;
+        --h2-font-size: 1.25rem;
+        --h3-font-size: 1rem;
+        --normal-font-size: 17px;
+        --small-font-size: .813rem;
+        --smaller-font-size: .75rem;
+    }
+    .section-container {
+        padding: 1rem;
+    }
+}
 
 @media screen and (min-width: 768px) {
     :root {
@@ -369,7 +396,7 @@ img {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     .section-container{
         padding: 2.2rem;
     }

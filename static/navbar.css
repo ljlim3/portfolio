@@ -1,19 +1,19 @@
 
-
 :root {
     --nav-color: #B28228;
     --ambrace-first-color-alt: #048654; 
 }
 
 .nav-header {
-    width: 100%;
+    /* width: inherit; */
     position: fixed;
+    right: 0;
     top: 0;
     left: 0;
     z-index: 100;
-    background-color: inherit;/*#FBFEFD;*/
+    background-color: inherit;
 }
-
+/*#FBFEFD;*/
 /* navbar */
 .navbar {
     max-width: 1024px;
@@ -44,7 +44,7 @@
 }
 
 .nav-item {
-    padding-bottom: 0.5rem;
+    /* padding-bottom: 0.5rem; */
     padding-top: 0.5rem;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -133,9 +133,9 @@
 }
 
 .logo {
-    border-radius: 10%;
+    /* border-radius: 10%;
     background-color:rgb(38, 38, 38);
-    padding: 8px;
+    padding: 8px; */
     /* z-index: 999; */
 }
 .logo a{
@@ -143,6 +143,9 @@
     color: #CBB26A;
     font-size: 15px;
     font-weight: 600;
+    background-color: rgb(38, 38, 38);
+    padding: 8px;
+    border-radius: 10%;
 }
 .logo a span {
     color: #b29244;
@@ -152,10 +155,21 @@
     padding: 16px 0;
     /* background: #B28228; #592906; #A0522D; */
 }
-
+.nav-menu ul li {
+    position: relative;
+    display: block;
+}
+.nav-list .nav-link:first-child {
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+/* .nav-menu ul li .sub-menu-1 {
+    position: absolute;
+    display: inline-block;
+} */
 .nav-menu ul li .sub-menu-1 ul li a {
     padding: 0.7rem 3.4rem 0.7rem 0px;
     width: 145px;
+    /* display: inline-block; */
 }
 
 .footer {
@@ -227,13 +241,12 @@ footer {
         content: '\f0d8';
         font-family: fontAwesome;
         position: absolute;
-        line-height: 24px;
+        line-height: 1px;
         color: #707070;
         right: 25px;
         font-size: 1.3rem;
         cursor: pointer;
-        padding-bottom: 0.5rem;
-        padding-left: 0.5rem;
+        padding: 1.3rem;
     }
     
 
@@ -257,7 +270,7 @@ footer {
         display: block;
         position: absolute;
         background: rgb(245, 245, 245);
-        margin-top: 8px;
+        margin-top: -5px;
         margin-left: -15px;
     }
     .nav-menu ul li:hover .sub-menu-1 ul {
@@ -289,7 +302,7 @@ footer {
         content: '\f0d7';
         font-family: fontAwesome;
         position: absolute;
-        line-height: 25px;
+        line-height: 38px;
         color: #707070;
         right: -14px;
         cursor: pointer;

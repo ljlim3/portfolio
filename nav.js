@@ -66,7 +66,7 @@ function hamburgBtnMenuToggle() {
 
 let subMenu = document.querySelector('.nav-item.sub-menu');
 
-// subMenu.addEventListener('click', toggleSubMenu);
+subMenu.addEventListener('click', toggleSubMenu);
 function toggleSubMenu() {
     this.classList.toggle('active');
 }
