@@ -62,7 +62,7 @@ window.addEventListener('scroll', function() {
     }
 })
 
-
+document.querySelector('.copyright-year').textContent = new Date().getFullYear();
 
 $(document).ready(function() {
 
