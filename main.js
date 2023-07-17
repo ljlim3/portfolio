@@ -11,7 +11,7 @@ const myLogo = document.querySelector('.card-front .logo');
 myLogo.addEventListener('click', flip);
 
 function flip() {
-    card.classList.toggle('flip');
+  card.classList.toggle('flip');
 }
 
 let menuBtn = document.querySelector('.menu-btn');
@@ -21,27 +21,27 @@ let hamburgMenuBtn = document.querySelector('.menu-btn i');
 menuBtn.addEventListener('click', hamburgBtnMenuToggle);
 
 function hamburgBtnMenuToggle() {
-    navMenu.classList.toggle('active');
-    hamburgMenuBtn.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  hamburgMenuBtn.classList.toggle('active');
 }
 
 const showMenu = (menuBtn, nav) => {
-    const toggle = document.querySelector(menuBtn);
-    nav = document.querySelector(nav);
+  const toggle = document.querySelector(menuBtn);
+  nav = document.querySelector(nav);
 
-    if(menuBtn && nav) {
-        toggle.addEventListener('click', () => {
-            nav.classList.toggle('show-menu');
-        })
-    }
+  if (menuBtn && nav) {
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('show-menu');
+    })
+  }
 }
 showMenu('.menu-btn', '.nav-menu');
 
 const navLink = document.querySelectorAll('.nav-link');
 
 function linkAction() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.remove('show-menu');
+  const navMenu = document.querySelector('.nav-menu');
+  navMenu.classList.remove('show-menu');
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
@@ -50,59 +50,59 @@ let subMenu = document.querySelector('.nav-item.sub-menu');
 
 subMenu.addEventListener('click', toggleSubMenu);
 function toggleSubMenu() {
-    this.classList.toggle('active');
+  this.classList.toggle('active');
 }
 
-window.addEventListener('scroll', function() {
-    let navbar = document.querySelector('.navbar');
-    if(this.scrollY > 20) {
-        navbar.classList.add("sticky");
-    } else {
-        navbar.classList.remove("sticky");
-    }
+window.addEventListener('scroll', function () {
+  let navbar = document.querySelector('.navbar');
+  if (this.scrollY > 20) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
 })
 
-document.querySelector('.copyright-year').textContent = new Date().getFullYear();
+document.querySelector('.copyright-year').innerHTML = new Date().getFullYear();
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-    // typing animation
-    var typed = new Typed(".typing", {
-        strings: ["Lydia Lim"],
-        typeSpeed: 90,
-        backSpeed: 60,
-        loop: false,
-        showCursor: false
-    });
+  // typing animation
+  var typed = new Typed(".typing", {
+    strings: ["Lydia Lim"],
+    typeSpeed: 90,
+    backSpeed: 60,
+    loop: false,
+    showCursor: false
+  });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Designer | Developer"],
-        startDelay: 1700,
-        typeSpeed: 80,
-        backSpeed: 60,
-        loop: false,
-        showCursor: false
-    });
+  var typed = new Typed(".typing-2", {
+    strings: ["Designer | Developer"],
+    startDelay: 1700,
+    typeSpeed: 80,
+    backSpeed: 60,
+    loop: false,
+    showCursor: false
+  });
 
-    // owl carousel
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0: {
-                items: 1,
-                nav: false
-            },
-            600: {
-                items: 2,
-                nav: false
-            },
-            // 1000: {
-            //     items: 3,
-            //     nav: false
-            // }
-        }
-    });
+  // owl carousel
+  $('.carousel').owlCarousel({
+    margin: 20,
+    loop: true,
+    autoplayTimeOut: 2000,
+    autoplayHoverPause: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: false
+      },
+      600: {
+        items: 2,
+        nav: false
+      },
+      // 1000: {
+      //     items: 3,
+      //     nav: false
+      // }
+    }
+  });
 });
